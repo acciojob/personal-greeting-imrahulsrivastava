@@ -14,14 +14,17 @@ export default class Greeting extends Component {
   render() {
     return (
       <div>
-        <p>Enter your name:</p>
-        <input
-          type="text"
-          value={this.state.value}
-          onChange={this.changedText}
-        />
-        <p>{this.state.value ? ("Hello " + this.state.value + "!") : null}</p>
-      </div>
+      <label htmlFor="input">Enter your name:</label>
+      <br /> <br />
+      <input
+        type="text"
+        id="input"
+        value={this.state.value}
+        onChange={this.changedText}
+      />
+      <br />
+      <p>{this.state.value ? "Hello " + this.state.value + "!" : null}</p>
+    </div>
     );
   }
 }
