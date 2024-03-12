@@ -14,15 +14,13 @@ export default class Greeting extends Component {
   render() {
     return (
       <div>
-        <label htmlFor="input">Enter your name:</label>
+        <p>Enter your name:</p>
         <input
           type="text"
-          id="input"
-          name="fullName"
           value={this.state.value}
           onChange={this.changedText}
         />
-        {this.state.value ? <p>Hello {this.state.value}!</p> : null}
+        <p>{this.state.value ? ("Hello " + this.state.value + "!") : null}</p>
       </div>
     );
   }
