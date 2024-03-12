@@ -21,7 +21,7 @@ export default class Greeting extends Component {
           value={this.state.value}
           onChange={this.changedText}
         />
-        {this.state.value ? <p>Hello {this.state.value}</p> : null}
+        {this.state.value ? <p>Hello {this.state.value}!</p> : null}
       </div>
     );
   }
