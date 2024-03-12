@@ -7,7 +7,8 @@ export default class Greeting extends Component {
   }
 
   changedText = (event) => {
-    this.setState({ value: event.target.value });
+    const newValue = event.target.value;
+    this.setState({ value: newValue });
   };
 
   render() {
